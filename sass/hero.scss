@@ -58,16 +58,24 @@ p {
   outline: none;
   box-shadow: none;
   border: 1px solid #dedede;
-  margin-bottom: 4rem;
 }
 .input-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
+}
+.danger-message {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  visibility: visible;
+  margin-bottom: 1rem;
 }
 .input-icon {
   position: absolute;
   left: 95%;
   top: 13%;
-  display: none;
+  display: block;
   @media (max-width: 1273px) {
     left: 93%;
     top: 12%;

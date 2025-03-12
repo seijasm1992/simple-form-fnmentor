@@ -15,7 +15,7 @@ html {
 
 body {
   min-height: 100dvh;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   color: hsl(0, 0%, 100%);
 }
@@ -126,11 +126,20 @@ p {
   outline: none;
   box-shadow: none;
   border: 1px solid #dedede;
-  margin-bottom: 4rem;
 }
 
 .input-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
+}
+
+.danger-message {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  visibility: hidden;
+  margin-bottom: 1rem;
 }
 
 .input-icon {
@@ -265,5 +274,7 @@ form {
 .danger {
   border: 1px solid red;
 }
-
+.showmessage {
+  visibility: visible;
+}
 /*# sourceMappingURL=style.comp.css.map */
